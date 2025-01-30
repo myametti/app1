@@ -1,0 +1,12 @@
+.inicio {
+    background-image: url('./imagenes/inicio.jpg'); 
+  background-size: 1900px 980px; /* Ajusta la imagen al tamaño del contenedor sin recortarla */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Mantén el 100% de altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  }

@@ -1,0 +1,35 @@
+.App{
+  text-align: center;
+}
+/* Estilo general para la barra de navegación */
+.nav-tabs {
+  background-color: rgb(126, 126, 110); /* Color de fondo de la barra */
+  padding: 10px;
+  border-radius: 5px; /* Bordes redondeados */
+  justify-content: center; /* Centra horizontalmente los ítems */
+}
+
+/* Estilo para las letras de los ítems */
+.nav-tabs .nav-link {
+  border: 2px solid transparent; /* Borde por defecto transparente */
+  color: rgb(202, 202, 191) !important; /* Color de letra por defecto */
+  font-size: 18px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  padding: 10px 80px;
+}
+
+/* Cambiar color al pasar el mouse */
+.nav-tabs .nav-link:hover {
+  background-color: rgb(141, 141, 127); /* Fondo hover */
+  color: #3f3d35 !important; /* Color de texto */
+  border-color: rgb(141, 141, 127); /* Borde hover */
+}
+
+/* Ítem activo */
+.nav-tabs .nav-link.active {
+  background-color: rgb(194, 194, 180) !important; /* Color de fondo */
+  color: rgb(68, 62, 62) !important; /* Color del texto */
+  border: 2px solid rgb(141, 141, 127) !important; /* Borde */
+}

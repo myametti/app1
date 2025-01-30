@@ -1,0 +1,17 @@
+.discografia {
+    background-color: antiquewhite;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cambia el color del texto para que sea visible */
+    text-shadow: 1px 1px 2px black; /* Agrega un sombreado al texto */
+    display: grid;
+    grid-template-rows: repeat(2, 0fr); /* 2 equal-height rows */
+    gap: 0.5rem; /* Spacing between grid items */
+}
+.card-body{
+  background-color: rgb(245, 240, 233);
+  color:rgb(85, 81, 75);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,107 @@
+.Tours {
+    background-size: cover;
+  }
+  
+.carousel-item img{
+    height: 900px; /* Define la altura máxima para las imágenes */
+    max-width: 100%; /* Asegura que el ancho se ajuste automáticamente */
+    object-fit: contain; /* No recorta la imagen, la ajusta dentro del contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Permite el centrado correcto */
+
+}
+
+#Fearless{
+  background-color: rgb(230, 211, 108);
+}
+
+#cardFearless{
+  background-color: rgb(29, 28, 26);
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color:white;
+  text-align: center;
+  
+}
+#SpeakNow{
+  background-color: rgb(187, 113, 187);
+}
+#cardSpeakNow{
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+}
+#Red{
+  background-color: rgb(199, 71, 71);
+}
+#cardRed{
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+#Nineteen{
+  background-color: rgb(113, 154, 187);
+}
+#card1989{
+  background-color: rgb(189, 144, 186);
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+#Reputation{
+  background-color: rgb(107, 105, 107);
+}
+#cardReputation{
+  background-color: rgb(49, 47, 49);
+  position: fixed;
+  width: 360px;
+  height: 300px;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+#TheEras{
+  background-color: rgb(212, 205, 212);
+}
+#cardTheEras{
+  background-color: rgb(50, 61, 92);
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+
+#prev{
+  position: fixed;
+  top: 50%;
+  left:2cm;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#next{
+  position: fixed;
+  top: 50%;
+  right: 2cm;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
