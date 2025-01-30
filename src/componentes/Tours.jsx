@@ -25,7 +25,23 @@ const Tours=()=>{
                 <div className="carousel-item active fearless-slide" id="Fearless" >
                   <div className='card' id='cardFearless'>
                     <h5 className="card-title">Fearless Tour</h5>
-                    <p className="card-text">El tour de Fearless, que se llevo a cabo en 2006, fue el primer tour de Taylor Swift en el que aparece en el disco de estudio Fearless.</p>
+                    <p className="card-text">
+                      <ul className="ulCentrados">
+                      Álbum promocionado: Fearless
+                      </ul>
+                      <ul className="ulCentrados">
+                      Países visitados: Estados Unidos, Canadá, Reino Unido, Japón, Australia
+                      </ul>
+                      <ul className="ulCentrados">
+                      Número de shows: 108
+                      </ul>
+                      <ul className="ulCentrados">
+                      Recaudación: No se tienen datos exactos, pero se estima que superó los 15 millones de dólares. 
+                      </ul>
+                      <ul className="ulCentrados">
+                      Datos relevantes: Fue su primera gira como artista principal y contó con teloneros como Kellie Pickler y Gloriana.
+                      </ul>  
+                    </p>
                   </div>
                   <img className="d-block w-100" src={fearlessTour} alt="Fearless Tour" />
                 </div>
