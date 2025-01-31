@@ -1,5 +1,5 @@
 .inicio {
-    background-image: url('./imagenes/inicio.jpg'); 
+
   background-size: 1900px 980px; /* Ajusta la imagen al tamaño del contenedor sin recortarla */
   background-position: center;
   background-repeat: no-repeat;

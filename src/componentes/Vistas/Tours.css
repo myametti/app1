@@ -11,6 +11,12 @@
 
 }
 
+.card-title {
+  font-size: 2rem; /* Aumenta el tamaño del título */
+  font-weight: bold;
+}
+
+
 #Fearless{
   background-color: rgb(230, 211, 108);
 }
@@ -18,7 +24,7 @@
 #cardFearless{
   background-color: rgb(29, 28, 26);
   position: absolute;
-  width: 460px;
+  width: 400px;
   height: 350px;
   top: 50%;
   left: 20%;
@@ -28,7 +34,7 @@
   font-family: "Play", serif;
   font-weight: 400;
   font-style: normal;
-  
+  font-size: 20px;;
 }
 
 #SpeakNow{
@@ -37,12 +43,13 @@
 #cardSpeakNow{
   background-color: rgb(231, 231, 231);
   position: absolute;
-  width: 450px;
+  width: 400px;
   height: 350px;
   top: 50%;
   left: 16%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 22px;
   font-family: "Parisienne", serif;
   font-weight: 400;
   font-style: normal;
@@ -53,7 +60,7 @@
 #cardRed{
   background-color: rgb(255, 255, 255);
   position: absolute;
-  width: 450px;
+  width: 400px;
   height: 350px;
   top: 50%;
   left: 20%;
@@ -62,6 +69,7 @@
   font-family: "Bebas Neue", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
 }
 #Nineteen{
   background-color: rgb(113, 154, 187);
@@ -69,7 +77,7 @@
 #card1989{
   background-color: rgb(189, 144, 186);
   position: absolute;
-  width: 450px;
+  width: 400px;
   height: 350px;
   top: 50%;
   left: 20%;
@@ -80,6 +88,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 22px;
 }
 #Reputation{
   background-color: rgb(107, 105, 107);
@@ -87,7 +96,7 @@
 #cardReputation{
   background-color: rgb(49, 47, 49);
   position: absolute;
-  width: 450px;
+  width: 380px;
   height: 350px;
   top: 50%;
   left: 15%;
@@ -98,6 +107,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
 }
 #TheEras{
   background-color: rgb(212, 205, 212);
@@ -105,7 +115,7 @@
 #cardTheEras{
   background-color: rgb(50, 61, 92);
   position: absolute;
-  width: 450px;
+  width: 400px;
   height: 350px;
   top: 50%;
   left: 20%;
@@ -118,10 +128,13 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+    font-size: 20px;
 }
 
-.ulCentrados{
-  display: grid; place-items: center;
+.pCentrados{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 #prev{

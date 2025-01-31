@@ -24,59 +24,139 @@ const Tours=()=>{
               <div className="carousel-inner">
                 <div className="carousel-item active fearless-slide" id="Fearless" >
                   <div className='card' id='cardFearless'>
-                    <h5 className="card-title">Fearless Tour</h5>
-                    <p className="card-text">
-                      <ul className="ulCentrados">
+                    <h5 className="card-title">Fearless Tour (2009-2010)</h5>
+                    <div className="card-text">
+                      <p className="pCentrados">
                       Álbum promocionado: Fearless
-                      </ul>
-                      <ul className="ulCentrados">
+                      </p>
+                      <p className="pCentrados">
                       Países visitados: Estados Unidos, Canadá, Reino Unido, Japón, Australia
-                      </ul>
-                      <ul className="ulCentrados">
+                      </p>
+                      <p className="pCentrados">
                       Número de shows: 108
-                      </ul>
-                      <ul className="ulCentrados">
+                      </p>
+                      <p className="pCentrados">
                       Recaudación: No se tienen datos exactos, pero se estima que superó los 15 millones de dólares. 
-                      </ul>
-                      <ul className="ulCentrados">
+                      </p>
+                      <p className="pCentrados">
                       Datos relevantes: Fue su primera gira como artista principal y contó con teloneros como Kellie Pickler y Gloriana.
-                      </ul>  
-                    </p>
+                      </p>  
+                    </div>
                   </div>
                   <img className="d-block w-100" src={fearlessTour} alt="Fearless Tour" />
                 </div>
                 <div className="carousel-item" id='SpeakNow'>
                   <div className='card' id='cardSpeakNow'>
-                    <h5 className="card-title">Speak Now Tour</h5>
-                    <p className="card-text">El tour de Fearless, que se llevo a cabo en 2006, fue el primer tour de Taylor Swift en el que aparece en el disco de estudio Fearless.</p>
+                    <h5 className="card-title">Speak Now Tour  (2011-2012)</h5>
+                    <div className="card-text">
+                      <p className='pCentrados'>
+                    Álbum promocionado: Speak Now
+                    </p>
+                    <p className='pCentrados'>
+                    Países visitados: 17 (incluyendo Norteamérica, Europa, Asia y Australia)
+                    </p>
+                    <p className='pCentrados'>
+                    Número de shows: 110
+                    </p>
+                    <p className='pCentrados'>
+                    Recaudación: 123.4 millones de dólares
+                    </p>
+                    <p className='pCentrados'>
+                    Datos relevantes: Marcó su consolidación como estrella global y destacó por su elaborada puesta en escena.
+                    </p>
+                    </div>
                   </div> 
                   <img className="d-block w-100 h-10" src={speakNowTour} alt="Speak Now Tour"/>
                 </div>
                 <div className="carousel-item" id='Red'>
                   <div className='card' id='cardRed'>
-                    <h5 className="card-title">Red Tour</h5>
-                    <p className="card-text">El tour de Fearless, que se llevo a cabo en 2006, fue el primer tour de Taylor Swift en el que aparece en el disco de estudio Fearless.</p>
+                    <h5 className="card-title">Red Tour (2013-2014)</h5>
+                    <div className="card-text">
+                      <p className='pCentrados'>
+                      Álbum promocionado: Red
+                      </p>
+                      <p className='pCentrados'>
+                      Países visitados: 7 (Norteamérica, Europa y Australia)
+                      </p>
+                      <p className='pCentrados'>
+                      Número de shows: 86
+                      </p>
+                      <p className='pCentrados'>
+                      Recaudación: 150.2 millones de dólares
+                      </p>
+                      <p className='pCentrados'>
+                      Incluyó elementos teatrales y contó con la participación de artistas invitados como Ed Sheeran y Sam Smith.
+                      </p>
+                    </div>
                   </div>
                   <img className="d-block w-100" src={redTour} alt="Red Tour"/>
                 </div>
                 <div className="carousel-item" id='Nineteen'>
                   <div className='card' id='card1989'>
-                    <h5 className="card-title">1989 Tour</h5>
-                    <p className="card-text">El tour de Fearless, que se llevo a cabo en 2006, fue el primer tour de Taylor Swift en el que aparece en el disco de estudio Fearless.</p>
+                    <h5 className="card-title">1989 Tour (2015-2016)</h5>
+                    <div className="card-text">
+                      <p className='pCentrados'>
+                      Álbum promocionado: 1989
+                      </p>
+                      <p className='pCentrados'>
+                      Países visitados: 11 (Norteamérica, Europa, Asia y Australia)
+                      </p>
+                      <p className='pCentrados'>
+                      Número de shows: 85
+                      </p>
+                      <p className='pCentrados'>
+                      Recaudación: 250.7 millones de dólares
+                      </p>
+                      <p className='pCentrados'>
+                      Se caracterizó por su estética retro y la presencia de numerosas celebridades en el escenario.
+                      </p>
+                    </div>
                   </div>
                   <img className="d-block w-100" src={nineteenTour} alt="1989 Tour"/>
                 </div>
                 <div className="carousel-item" id='Reputation'>
                   <div className='card' id='cardReputation'>
-                    <h5 className="card-title">Reputation Tour</h5>
-                    <p className="card-text">El tour de Fearless, que se llevo a cabo en 2006, fue el primer tour de Taylor Swift en el que aparece en el disco de estudio Fearless.</p>
+                    <h5 className="card-title">Reputation Tour (2018)</h5>
+                    <div className="card-text">
+                      <p className='pCentrados'>
+                      Álbum promocionado: Reputation
+                      </p>
+                      <p className='pCentrados'>
+                      País visitado: 7 (Norteamérica, Europa, Asia y Oceanía)
+                      </p>
+                      <p className='pCentrados'>
+                      Número de shows: 53
+                      </p>
+                      <p className='pCentrados'>
+                      Recaudación:  345.2 millones de dólares
+                      </p>
+                      <p className='pCentrados'>
+                      Fue una de las giras más taquilleras de la historia y destacó por su impactante puesta en escena.
+                      </p>
+                    </div>
                   </div>
                   <img className="d-block w-100" src={repTour} alt="Reputation Tour"/>
                 </div>
                 <div className="carousel-item" id='TheEras'>
                   <div className='card' id='cardTheEras'>
-                    <h5 className="card-title">The Eras Tour</h5>
-                    <p className="card-text">El tour de Fearless, que se llevo a cabo en 2006, fue el primer tour de Taylor Swift en el que aparece en el disco de estudio Fearless.</p>
+                    <h5 className="card-title">The Eras Tour (2023-2024)</h5>
+                    <div className="card-text">
+                      <p className='pCentrados'>
+                      Álbum promocionado: Todos los álbumes de su discografía.
+                      </p>
+                      <p className='pCentrados'>
+                      País visitado: 20 en 5 continentes (Norteamérica, Sudamérica, Europa, Asia y Oceanía)
+                      </p>
+                      <p className='pCentrados'>
+                      Número de shows: 152
+                      </p>
+                      <p className='pCentrados'>
+                      Recaudación:  1.039 millones de dólares
+                      </p>
+                      <p className='pCentrados'>
+                      Es la gira más ambiciosa y extensa de su carrera hasta la fecha, abarcando todas las "eras" musicales de su trayectoria.
+                      </p>
+                    </div>
                   </div>
                   <img className="d-block w-100" src={theErasTour} alt="The Eras Tour"/>
                 </div>
