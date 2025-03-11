@@ -1,0 +1,18 @@
+.PagTS{
+    position: absolute; 
+    display:flex;
+    top: 15px; 
+    left: 15%; 
+    transform: translateX(-50%); 
+    z-index: 2;
+  }
+  
+  .PagTS button{
+    background-color: rgb(194, 194, 180) ; /* Example color */
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  

@@ -1,0 +1,62 @@
+[
+    { 
+      "id": "Fearless",
+      "titulo": "Fearless Tour (2009-2010)",
+      "album": "Álbum promocionado: Fearless",
+      "paises": "Países visitados: Estados Unidos, Canadá, Reino Unido, Japón, Australia",
+      "shows": "Número de shows: 108",
+      "recaudacion": "Recaudación: Estimada en más de 15 millones de dólares.",
+      "datos": "Datos Relevantes: Fue su primera gira como artista principal y contó con teloneros como Kellie Pickler y Gloriana.",
+      "imagen": "/imagenes/fearlessTour.jpg"
+    },
+    {
+      "id": "SpeakNow",
+      "titulo": "Speak Now Tour (2011-2012)",
+      "album": "Álbum promocionado: Speak Now",
+      "paises": "Países visitados: 17 (incluyendo Norteamérica, Europa, Asia y Australia)",
+      "shows": "Número de shows: 110",
+      "recaudacion": "Recaudación: 123.4 millones de dólares",
+      "datos": "Datos Relevantes: Marcó su consolidación como estrella global y destacó por su elaborada puesta en escena.",
+      "imagen": "/imagenes/speakNowTour.png"
+    },
+    {
+      "id": "Red",
+      "titulo": "Red Tour (2013-2014)",
+      "album": "Álbum promocionado: Red",
+      "paises": "Países visitados: 7 (Norteamérica, Europa y Australia)",
+      "shows": "Número de shows: 86",
+      "recaudacion": "Recaudación: 150.2 millones de dólares",
+      "datos": "Datos Relevantes: Incluyó elementos teatrales y contó con la participación de artistas invitados como Ed Sheeran y Sam Smith.",
+      "imagen": "/imagenes/redTour.jpg"
+    },
+    {
+      "id": "Nineteen",
+      "titulo": "1989 Tour (2015-2016)",
+      "album": "Álbum promocionado: 1989",
+      "paises": "Países visitados: 11 (Norteamérica, Europa, Asia y Australia)",
+      "shows": "Número de shows: 85",
+      "recaudacion": "Recaudación: 250.7 millones de dólares",
+      "datos": "Datos Relevantes: Se caracterizó por su estética retro y la presencia de numerosas celebridades en el escenario.",
+      "imagen": "/imagenes/1989tour.jpg"
+    },
+    {
+      "id": "Rep",
+      "titulo": "Reputation Tour (2018)",
+      "album": "Álbum promocionado: Reputation",
+      "paises": "País visitado: 7 (Norteamérica, Europa, Asia y Oceanía)",
+      "shows": "Número de shows: 53",
+      "recaudacion": "Recaudación: 345.2 millones de dólares",
+      "datos": "Datos Relevantes: Fue una de las giras más taquilleras de la historia y destacó por su impactante puesta en escena.",
+      "imagen": "/imagenes/reptour.webp"
+    },
+    {
+      "id": "Eras",
+      "titulo": "The Eras Tour (2023-2024)",
+      "album": "Álbum promocionado: Todos los álbumes de su discografía.",
+      "paises": "Países visitados: 20 en 5 continentes (Norteamérica, Sudamérica, Europa, Asia y Oceanía)",
+      "shows": "Número de shows: 152",
+      "recaudacion": "Recaudación: 1.039 millones de dólares",
+      "datos": "Datos Relevantes: Es la gira más ambiciosa y extensa de su carrera hasta la fecha.",
+      "imagen": "/imagenes/theerastour.webp"
+    }
+  ]

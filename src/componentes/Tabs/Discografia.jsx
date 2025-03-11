@@ -24,6 +24,7 @@ const Discografia=()=>{
                                 El álbum debut homónimo que la presentó al mundo con un sonido country fresco y letras personales.
                             </p>
                             <a href="https://open.spotify.com/intl-es/album/5eyZZoQEFQWRHkV2xgAeBw?si=lUIyl76VREubBEKV6RRomw" className="btn btn-success">Abrir en Spotify</a>
+                        
                         </div>
                     </div>
                 </div>

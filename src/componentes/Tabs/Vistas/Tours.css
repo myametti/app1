@@ -1,7 +1,13 @@
 .Tours {
     background-size: cover;
   }
-  
+
+.carousel.inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .carousel-item img{
     height: 900px; /* Define la altura máxima para las imágenes */
     max-width: 100%; /* Asegura que el ancho se ajuste automáticamente */
@@ -16,19 +22,12 @@
   font-weight: bold;
 }
 
-
 #Fearless{
   background-color: rgb(230, 211, 108);
 }
 
-#cardFearless{
+#aFearless{
   background-color: rgb(29, 28, 26);
-  position: absolute;
-  width: 400px;
-  height: 350px;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
   color:white;
   text-align: center;
   font-family: "Play", serif;
@@ -40,14 +39,8 @@
 #SpeakNow{
   background-color: rgb(187, 113, 187);
 }
-#cardSpeakNow{
-  background-color: rgb(231, 231, 231);
-  position: absolute;
-  width: 400px;
-  height: 350px;
-  top: 50%;
-  left: 16%;
-  transform: translate(-50%, -50%);
+#aSpeakNow{
+  background-color: rgb(229, 215, 233);
   text-align: center;
   font-size: 22px;
   font-family: "Parisienne", serif;
@@ -57,32 +50,19 @@
 #Red{
   background-color: rgb(199, 71, 71);
 }
-#cardRed{
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  width: 400px;
-  height: 350px;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+#aRed{
+  background-color: rgb(221, 180, 180);
   text-align: center;
-  font-family: "Bebas Neue", serif;
+  font-family: "Play", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: 22px;
 }
 #Nineteen{
   background-color: rgb(113, 154, 187);
 }
-#card1989{
+#aNineteen{
   background-color: rgb(189, 144, 186);
-  position: absolute;
-  width: 400px;
-  height: 350px;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   color:white;
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -90,36 +70,24 @@
   font-style: normal;
   font-size: 22px;
 }
-#Reputation{
+#Rep{
   background-color: rgb(107, 105, 107);
 }
-#cardReputation{
+#aRep{
   background-color: rgb(49, 47, 49);
-  position: absolute;
-  width: 380px;
-  height: 350px;
-  top: 50%;
-  left: 15%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color:white;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 23px;
 }
-#TheEras{
+#Eras{
   background-color: rgb(212, 205, 212);
 }
-#cardTheEras{
+#aEras{
   background-color: rgb(50, 61, 92);
-  position: absolute;
-  width: 400px;
-  height: 350px;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color:white;
   font-family: "Playfair", serif;

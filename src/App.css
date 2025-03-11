@@ -3,10 +3,12 @@
 }
 /* Estilo general para la barra de navegación */
 .nav-tabs {
-  background-color: rgb(126, 126, 110); /* Color de fondo de la barra */
+  background-color: rgb(126, 126, 110);
   padding: 10px;
-  border-radius: 5px; /* Bordes redondeados */
-  justify-content: center; /* Centra horizontalmente los ítems */
+  border-radius: 5px;
+  justify-content: center;
+  position: relative; /* Important: Make nav-tabs a positioning context */
+  z-index: 1; /* Centra horizontalmente los ítems */
 }
 
 /* Estilo para las letras de los ítems */
