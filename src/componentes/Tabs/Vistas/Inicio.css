@@ -1,24 +1,19 @@
 .inicio {
-
-  background-size: 1900px 980px; /* Ajusta la imagen al tamaño del contenedor sin recortarla */
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Mantén el 100% de altura */
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-  }
+}
 
-  
-#cardNoticias{
-  display: flex;
-  position: absolute; 
-  top: 200px; 
-  left: 20%; 
-  transform: translateX(-50%); 
-  z-index: 2;
-  width: 400px;
-  height: 200px;
+#cardNoticias {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
 }

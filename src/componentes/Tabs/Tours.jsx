@@ -1,12 +1,24 @@
 
-import { useEffect } from 'react'
+import {/* useState,*/ useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react'
 import './Vistas/Tours.css'
-import tours from './arreglo.json'
+import tours from './arregloTours.json'
 
 const Tours = () => {
+ /* const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); */
 
   useEffect(() => {
     const carousel= document.getElementById("carouselTours");
@@ -36,7 +48,7 @@ const Tours = () => {
   }, []);
 
   return (
-    <div className="Tours">
+    <div className="Tours container-fluid g-0">
       <div id="carouselTours" className="carousel slide" data-bs-ride="carousel">
         {/* Indicadores */}
         <ol className="carousel-indicators">
@@ -54,32 +66,34 @@ const Tours = () => {
         <div className="carousel-inner">
           {tours.map((tour, index) => (
             <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`} id={`${tour.id}`}>
-              <img className="d-block w-100" src={tour.imagen} alt={tour.titulo} />
-              <div className="card text-center p-3" id={`a${tour.id}`}>
-                
-                <h5 className="card-title">{tour.titulo}</h5>
-                <div className="card-text" >
-                  <p>{tour.album}</p>
-                  <p>{tour.paises}</p>
-                  <p>{tour.shows}</p>
-                  <p>{tour.recaudacion}</p>
-                  <p>{tour.datos}</p>
+              <div className="tour-content">
+                <div className="tour-image-container">
+                  <img className="tour-image img-fluid" src={tour.imagen} alt={tour.titulo} />
+                </div>
+                <div className="tour-card card text-center p-3" id={`a${tour.id}`}>
+                  <h5 className="card-title">{tour.titulo}</h5>
+                  <div className="card-text">
+                    <p>{tour.album}</p>
+                    <p>{tour.paises}</p>
+                    <p>{tour.shows}</p>
+                    <p>{tour.recaudacion}</p>
+                    <p>{tour.datos}</p>
+                  </div>
                 </div>
               </div>
-              
             </div>
           ))}
         </div>
 
         {/* Controles */}
-        <a className="carousel-control-prev" href="#carouselTours" role="button" data-bs-slide="prev" onClick={window.scrollTo({top:0, behavior: "smooth"})}>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselTours" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Anterior</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselTours" role="button" data-bs-slide="next" onClick={window.scrollTo({top:0, behavior: "smooth"})}>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselTours" data-bs-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Siguiente</span>
-        </a>
+        </button>
       </div>
     </div>
   );

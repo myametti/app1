@@ -1,7 +1,10 @@
+import './Vistas/PagTS.css'
+import React from 'react';
 
-const PagTS =({titulo}) => {
+
+const PagTS = ({ titulo }) => {
     return (
-        <div className="PagTS"> 
+        <div className="PagTS-container"> 
             <BotonVista titulo={titulo}/>
         </div>
     )
@@ -11,10 +14,9 @@ const BotonVista = ({titulo}) => {
     const handleClick = () => {
         window.location.href = 'https://www.taylorswift.com/';
     }
-    return <Button onClick={handleClick}>{titulo}</Button>
-}
-
-const Button = ({onClick, children}) => {
-    return <button onClick={onClick}>{children}</button>
+    return (
+        <button className="btn btn-official-site" onClick={handleClick}>{titulo}</button>
+    )
 }
 export default PagTS;
+

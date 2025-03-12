@@ -1,19 +1,47 @@
-.PagTS{
-    position: absolute; 
-    display:flex;
-    top: 15px; 
-    left: 10%; 
-    transform: translateX(-50%); 
-    z-index: 2;
+.PagTS-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-official-site {
+  background-color: transparent;
+  color: rgb(75, 75, 61);
+  border: none;
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 10px 15px;
+  margin: 0;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-official-site:hover {
+  background-color: rgba(0,0,0,0.05);
+  color: rgb(50, 50, 40);
+}
+
+@media (max-width: 992px) {
+  .PagTS-container {
+      width: 100%;
   }
   
-  .PagTS button{
-    background-color: rgb(194, 194, 180) ; /* Example color */
-      color: black;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      display: flex;
+  .btn-official-site {
+      width: 100%;
+      padding: 10px 0;
+      background-color: rgb(75, 75, 61);
+      color: rgb(75, 75, 61);
   }
-  
+}
+
+@media (max-width: 768px) {
+  .btn-official-site {
+      margin-bottom: 10px;
+      background-color: rgb(75, 75, 61);
+      color: rgb(75, 75, 61);
+  }
+}

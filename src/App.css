@@ -1,37 +1,82 @@
-.App{
-  text-align: center;
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-/* Estilo general para la barra de navegación */
+
+/* Responsive navigation */
 .nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgb(126, 126, 110);
   padding: 10px;
   border-radius: 5px;
   justify-content: center;
-  position: relative; /* Important: Make nav-tabs a positioning context */
-  z-index: 1; /* Centra horizontalmente los ítems */
+  position: relative;
+  z-index: 1;
 }
 
-/* Estilo para las letras de los ítems */
 .nav-tabs .nav-link {
-  border: 2px solid transparent; /* Borde por defecto transparente */
-  color: rgb(202, 202, 191) !important; /* Color de letra por defecto */
-  font-size: 18px;
-  margin-right: 10px;
-  padding: 10px 15px;
+  border: 2px solid transparent;
+  color: rgb(75, 75, 61) !important;
+  font-size: clamp(14px, 2vw, 18px);
+  margin: 5px;
+  padding: 8px 15px;
   transition: all 0.3s ease;
-  padding: 10px 80px;
+  white-space: nowrap;
 }
-
-/* Cambiar color al pasar el mouse */
-.nav-tabs .nav-link:hover {
-  background-color: rgb(141, 141, 127); /* Fondo hover */
-  color: #3f3d35 !important; /* Color de texto */
-  border-color: rgb(141, 141, 127); /* Borde hover */
-}
-
-/* Ítem activo */
 .nav-tabs .nav-link.active {
-  background-color: rgb(194, 194, 180) !important; /* Color de fondo */
-  color: rgb(68, 62, 62) !important; /* Color del texto */
-  border: 2px solid rgb(141, 141, 127) !important; /* Borde */
+  background-color: rgb(197, 197, 179) !important;
+}
+
+.nav-tabs .official-site-nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-tabs .official-site-nav-item .btn-official-site {
+  color: rgb(75, 75, 61);
+  padding: 8px 15px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.mobile-official-site {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .nav-tabs {
+    justify-content: center;
+  }
+  
+  .nav-tabs .nav-link {
+    padding: 8px 15px;
+  }
+  
+  .official-site-nav-item {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-tabs .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-tabs .nav-link {
+    width: 100%;
+    margin: 3px 0;
+  }
 }
