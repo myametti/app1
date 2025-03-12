@@ -25,9 +25,9 @@ const Barra = () => {
   }, []);
 
   return (
-    <div id="barra-navegacion" className="container-fluid px-0">
-      <div className="row g-0">
-        <div className="col-12">
+    <div id="barra-navegacion" className="container-fluid px-0" style={{backgroundColor:'grey'}}>
+      <div className="row g-0" style={{backgroundColor:'grey'}}>
+        <div className="col-12" style={{backgroundColor:'grey'}}>
           <ul className="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             {!isMobile && (
               <li className="nav-item official-site-nav-item" role="presentation">
@@ -61,7 +61,7 @@ const Barra = () => {
       </div>
       
       <div className="row g-0">
-        <div className="col-12">
+        <div className="col-12" >
           <div className="tab-content" id="ventanas"> 
             <div className="tab-pane fade show active" id="inicio-tab-pane" role="tabpanel" aria-labelledby="inicio-tab" tabIndex="0">
               <Inicio/>

@@ -3,6 +3,7 @@
   background-color: antiquewhite; /* Original background color */
   background-size: contain;
 }
+
 /* Fix for long album titles */
 .album-card .card-title {
   font-size: 1.25rem;
@@ -10,7 +11,8 @@
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  min-height: 3.9rem; /* Approximately 3 lines of text */
+  margin-bottom: 0.5rem; /* Reduce space below the title */
+  min-height: 1.5rem; /* Reduce minimum height */
 }
 
 /* For extra long titles like "The Tortured Poets Department: The Anthology" */

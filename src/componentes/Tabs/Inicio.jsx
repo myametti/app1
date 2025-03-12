@@ -1,6 +1,6 @@
 import './Vistas/Inicio.css';
-import grammy from './Vistas/imagenes/grammy1.png';
-import grammy2 from './Vistas/imagenes/1989.webp';
+import grammys from './Vistas/imagenes/grammy1.png';
+import nuevoAlbum from './Vistas/imagenes/1989.webp';
 import Noticias from '../Noticias';
 import React, { useState, useEffect } from 'react';
 const Inicio=()=>{
@@ -57,8 +57,11 @@ const Inicio=()=>{
 //entonces en este caso se sincroniza el efecto con el estado de la foto,se va a settear una imagen segun el indice del arreglo con el images.length
     return(
         <div className="inicio" style={{  backgroundImage: `url(${images[imageIndex]})`,backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <Noticias imagenes={[grammy, grammy2 ]} title={[{t:"Taylor en los Grammys!"},{t:"Nuevo Album!"}]} 
+          <div className='col-4'>
+          <Noticias imagenes={[grammys, nuevoAlbum]} title={[{t:'Taylor en los Grammys!'},{t:'Nuevo Album!'}]} 
           text={['Se veia hermosa con ese vestido rojo bejeweled, la T de Taylor (o Travis) en su upper thigh fue espectacular', 'Se anuncio la regrabacion de 1989']}/>
+          </div>
+          
 
         </div>
     )
