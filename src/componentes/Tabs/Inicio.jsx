@@ -33,10 +33,10 @@ const Inicio=()=>{
         reject("Fallo la sincronizaicon de imagenes");//puedo tener ambas, pero se toma la que este primera escrita, es decir que si primero esta el reject entonces se ejecuta esa
       });
       
-      console.log(promesa);
+     // console.log(promesa);
       //se pueden concatenar "then", por si quiero que se haga algo mas ademas de la resolucion o rechazo
       promesa.then(exito =>{//si se resuelve va a la primera variable (onfulfilled), en este caso exito, si se rechaza va a la segunda(onrejected), en este caso error
-        console.log("El indice actual es: "+ exito);
+       // console.log("El indice actual es: "+ exito);
          intervalId = setInterval(() => {//la funcion hace que en un intervalo de 5seg se cambie el indice del arreglo de imagenes si la promesa se resuelve, sino se queda congelada en una
           setImageIndex((prevIndex) => (prevIndex + 1) % images.length);  
         }, 3000);
@@ -45,9 +45,9 @@ const Inicio=()=>{
         
       }
       ).then(() =>{
-        console.log("SIEMPRE TS");
+     //   console.log("SIEMPRE TS");
       }).finally(()=>{//me cierra la promesa y me indica cuando termina todo, tanto las acciones de algo completado como de algo rechazado, es el ultimo paso y se ejecuta siempre
-        console.log("finalizada");
+       // console.log("finalizada");
       });
       return () => clearInterval(intervalId);//por eso siempre el intervalo debe estar dentro de una variable, para poder cancelarlo
     }, 
@@ -61,8 +61,6 @@ const Inicio=()=>{
           <Noticias imagenes={[grammys, nuevoAlbum]} title={[{t:'Taylor en los Grammys!'},{t:'Nuevo Album!'}]} 
           text={['Se veia hermosa con ese vestido rojo bejeweled, la T de Taylor (o Travis) en su upper thigh fue espectacular', 'Se anuncio la regrabacion de 1989']}/>
           </div>
-          
-
         </div>
     )
 }

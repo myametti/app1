@@ -82,11 +82,11 @@ setCurrentTextIndex((prevIndex) => rango(prevIndex - 1, text.length));
     //MAP: el metodo map() nos permit generar un neuvo array tomando de base otro array y utilizando una funcion transformadora
     //en react con el map podremos hacer render de una coleccion de objetos
     useEffect(()=> {
-        console.log("noticia es: " + title[currentTitleIndex]);
-        console.log(title.map(titulo=> titulo.t)); // ['Taylor en los Grammys!', 'Nuevo Album!'] me lo muestra como si fuera un arreglo
-       console.log(title.map(titulo=> titulo.t).join(','));// Taylor en los Grammys!, Nuevo Album! me lo muestra directamente uniendo cada elemento
+       // console.log("noticia es: " + title[currentTitleIndex]);
+       // console.log(title.map(titulo=> titulo.t)); // ['Taylor en los Grammys!', 'Nuevo Album!'] me lo muestra como si fuera un arreglo
+      // console.log(title.map(titulo=> titulo.t).join(','));// Taylor en los Grammys!, Nuevo Album! me lo muestra directamente uniendo cada elemento
 
-       console.log(title.map(titulo => ({titulos: titulo.t})) )//esto hace que se me cree un nuevo arreglo con objetos que tengan cada uno de los titulos de mi arreglo
+     //  console.log(title.map(titulo => ({titulos: titulo.t})) )//esto hace que se me cree un nuevo arreglo con objetos que tengan cada uno de los titulos de mi arreglo
         //si yo quisiera puedo agregar cambios a hacer, por ejemplo algun useState, poner algun set... cuando hay un cambio de estado
     },[currentTitleIndex,title]);
 

@@ -1,6 +1,7 @@
 {
-  "name": "appreactst",
+  "name": "app1",
   "version": "0.1.0",
+  "proxy": "https://api.mercadolibre.com",
   "private": true,
   "dependencies": {
     "autoprefixer": "^10.4.21",
