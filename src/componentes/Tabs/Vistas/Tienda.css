@@ -41,22 +41,32 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-  .producto-card {
+  .tienda-container .btn-group{
+    border-color: #272722;
+    background-color: #5e5f58;
+  }
+
+  .tienda-container .btn-outline{
+    background-color: #b6b6b0;
+  }
+  
+  /* Usamos selectores más específicos para las tarjetas de la tienda */
+  .tienda-container .producto-card {
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 0;
-    overflow: hidden ;
+    overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     background-color: rgb(84, 90, 69);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: rgb(69, 70, 65);
   }
   
-  .producto-card:hover {
+  .tienda-container .producto-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
   }
   
-  .img-container {
+  .tienda-container .img-container {
     height: 200px;
     display: flex;
     align-items: center;
@@ -66,42 +76,42 @@
     overflow: hidden;
   }
   
-  .img-container img {
+  .tienda-container .img-container img {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
     transition: transform 0.3s;
   }
   
-  .producto-card:hover .img-container img {
+  .tienda-container .producto-card:hover .img-container img {
     transform: scale(1.05);
   }
   
-  .card-title {
-    font-size: 0.95rem;
-    font-family: "Playfair", serif;
+  /* Hacemos los selectores de título y texto más específicos */
+  .tienda-container .producto-card .card-title {
+    font-size:0.95rem !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif!important;
     font-weight: 500;
     height: 2.8rem;
     overflow: hidden;
     display: -webkit-box;
-
     -webkit-box-orient: vertical;
     color: #e7e7d6 !important;
   }
   
-  .precio {
+  .tienda-container .precio {
     font-size: 1.25rem;
     font-weight: 700;
     color: #e7e7d6;
     font-family: "Cinzel", serif;
   }
   
-  .badge {
+  .tienda-container .badge {
     font-weight: 500;
     padding: 0.35em 0.65em;
   }
   
-  .btn-primary {
+  .tienda-container .btn-primary {
     background-color: #32332c;
     border-color: #bcbdb5;
     font-family: "Montserrat", serif;
@@ -109,71 +119,71 @@
     letter-spacing: 1px;
     font-size: 0.85rem;
     transition: all 0.3s;
-    color:rgb(219, 223, 204);
+    color: rgb(219, 223, 204);
   }
   
-  .btn-primary:hover, .btn-primary:focus {
+  .tienda-container .btn-primary:hover, .tienda-container .btn-primary:focus {
     background-color: #adada1;
     border-color: #bcbdb5;
     transform: translateY(-2px);
   }
   
-  .spinner-border {
+  .tienda-container .spinner-border {
     width: 3rem;
     height: 3rem;
     color: white !important;
   }
   
-  .badge.bg-info {
+  .tienda-container .badge.bg-info {
     background-color: rgba(209, 196, 233, 0.8) !important;
-    color: #adada1 !important;
+    color: #272722 !important;
   }
   
-  .badge.bg-success {
+  .tienda-container .badge.bg-success {
     background-color: #4caf50 !important;
   }
   
   /* Estilos para el buscador */
-  .input-group {
+  .tienda-container .input-group {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   }
   
-  .input-group .form-control {
+  .tienda-container .input-group .form-control {
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
     padding: 0.75rem 1rem;
     font-family: "Montserrat", serif;
   }
   
-  .input-group .form-control:focus {
+  .tienda-container .input-group .form-control:focus {
     box-shadow: none;
     background-color: white;
   }
   
-  .input-group .btn {
+  .tienda-container .input-group .btn {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
   
   /* Estilos para mensajes cuando no hay productos */
-  .text-center h3 {
+  .tienda-container .text-center h3 {
     color: white;
     font-family: "Playfair", serif;
     margin-top: 2rem;
   }
   
-  .text-center p {
+  .tienda-container .text-center p {
     color: rgba(255, 255, 255, 0.7);
     font-family: "Montserrat", serif;
   }
   
   /* Responsive */
   @media (max-width: 767.98px) {
-    .img-container {
+    .tienda-container .img-container {
       height: 160px;
     }
     
-    .card-title {
+    .tienda-container .producto-card .card-title {
       font-size: 0.9rem;
     }
     
@@ -183,8 +193,9 @@
   }
   
   @media (max-width: 575.98px) {
-    .col-md-3 {
+    .tienda-container .col-md-3 {
       padding-left: 8px;
       padding-right: 8px;
     }
+    
   }

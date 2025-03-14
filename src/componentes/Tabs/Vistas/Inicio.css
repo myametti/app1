@@ -9,6 +9,7 @@
   padding: 20px; /* Add some padding */
 }
 
+/* Usar ID para aumentar especificidad y evitar conflictos */
 #cardNoticias {
   max-width: 350px;
   width: 100%;
@@ -27,8 +28,24 @@
 
 #cardNoticias .card-body {
   padding-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white !important;
 }
 
+#cardNoticias .card-title{
+  color: black !important;
+  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+  font-size: 1.25rem !important;
+  height: auto !important;
+  max-height: none !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+#cardNoticias .card-text{
+  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+}
 
 #cardNoticias .card-navigation-container {
   display: flex;
@@ -44,7 +61,7 @@
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
- 
+  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
 }
 
 #cardNoticias .btn-navigation:hover {
@@ -55,7 +72,6 @@
   #cardNoticias .btn-navigation {
     padding: 6px 12px;
     font-size: 0.9rem;
-    
+    font-family:Verdana, Geneva, Tahoma, sans-serif!important;
   }
-
 }

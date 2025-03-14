@@ -72,7 +72,7 @@ const Tours = () => {
                 </div>
                 <div className="tour-card card text-center p-3" id={`a${tour.id}`}>
                   <h5 className="card-title">{tour.titulo}</h5>
-                  <div className="card-text">
+                  <div className="card-text" >
                     <p>{tour.album}</p>
                     <p>{tour.paises}</p>
                     <p>{tour.shows}</p>

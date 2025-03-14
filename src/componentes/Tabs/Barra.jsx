@@ -26,8 +26,8 @@ const Barra = () => {
 
   return (
     <div id="barra-navegacion" className="container-fluid px-0" style={{backgroundColor:'grey'}}>
-      <div className="row g-0" style={{backgroundColor:'grey'}}>
-        <div className="col-12" style={{backgroundColor:'grey'}}>
+      <div className="row g-0" >
+        <div className="col-12">
           <ul className="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             {!isMobile && (
               <li className="nav-item official-site-nav-item" role="presentation">

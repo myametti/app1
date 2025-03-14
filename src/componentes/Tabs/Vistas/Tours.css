@@ -18,8 +18,9 @@
 }
 
 .card-title {
-  font-size: 2rem; /* Aumenta el tamaño del título */
+  font-size: 2rem !important; /* Aumenta el tamaño del título */
   font-weight: bold;
+
 }
 
 #Fearless{
@@ -28,9 +29,9 @@
 
 #aFearless{
   background-color: rgb(29, 28, 26);
-  color:white;
+  color:white!important;
   text-align: center;
-  font-family: "Play", serif;
+  font-family: "Play", serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;;
@@ -38,14 +39,23 @@
 
 #SpeakNow{
   background-color: rgb(187, 113, 187);
+  
 }
 #aSpeakNow{
   background-color: rgb(229, 215, 233);
   text-align: center;
   font-size: 22px;
-  font-family: "Parisienne", serif;
+  font-family: "Parisienne" , serif!important;
   font-weight: 400;
   font-style: normal;
+  color : rgb(77, 71, 71);
+}
+
+#aSpeakNow .card-title{
+  color: rgb(77, 71, 71) !important;
+}
+#aSpeakNow .card-text{
+  color: rgb(77, 71, 71)!important;
 }
 #Red{
   background-color: rgb(199, 71, 71);
@@ -53,7 +63,7 @@
 #aRed{
   background-color: rgb(221, 180, 180);
   text-align: center;
-  font-family: "Play", serif;
+  font-family: "Play", serif!important;
   font-weight: 400;
   font-style: normal;
   font-size: 22px;
@@ -63,8 +73,8 @@
 }
 #aNineteen{
   background-color: rgb(189, 144, 186);
-  color:white;
-  font-family: "Montserrat", serif;
+  color:white!important;
+  font-family: "Montserrat", serif!important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -76,8 +86,8 @@
 #aRep{
   background-color: rgb(49, 47, 49);
   text-align: center;
-  color:white;
-  font-family: "Cinzel", serif;
+  color:white!important;
+  font-family: "Cinzel", serif!important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -89,8 +99,8 @@
 #aEras{
   background-color: rgb(50, 61, 92);
   text-align: center;
-  color:white;
-  font-family: "Playfair", serif;
+  color:white !important;
+  font-family: "Playfair", serif!important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
