@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React from 'react'
 import './Vistas/Tours.css'
-import tours from './arregloTours.json'
+import tours from './jsons/arregloTours.json'
 
 const Tours = () => {
  /* const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

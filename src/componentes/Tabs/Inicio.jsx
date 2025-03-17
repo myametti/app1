@@ -3,6 +3,7 @@ import grammys from './Vistas/imagenes/grammy1.png';
 import nuevoAlbum from './Vistas/imagenes/1989.webp';
 import Noticias from '../Noticias';
 import React, { useState, useEffect } from 'react';
+
 const Inicio=()=>{
   const [imageIndex, setImageIndex] = useState(0);
   const images = [

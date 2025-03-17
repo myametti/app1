@@ -5,6 +5,7 @@ import Tours from './Tours';
 import Fotos from './Fotos';
 import Tienda from './Tienda';
 import PagTS from './PagTS';
+import Tienda2 from './Tienda2';
 import './Vistas/Barra.css';
 
 const Barra = () => {
@@ -50,6 +51,9 @@ const Barra = () => {
             <li className="nav-item" role="presentation">
               <button className="nav-link" id="Tienda" data-bs-toggle="tab" data-bs-target="#tienda-tab-pane" type="button" role="tab" aria-controls="tienda-tab-pane" aria-selected="false">Tienda</button>
             </li>
+            <li className="nav-item" role="presentation">
+              <button className="nav-link" id="Tienda2" data-bs-toggle="tab" data-bs-target="#tienda2-tab-pane" type="button" role="tab" aria-controls="tienda-tab-pane" aria-selected="false">Tienda 2</button>
+            </li>
           </ul>
           
           {isMobile && (
@@ -77,6 +81,9 @@ const Barra = () => {
             </div>
             <div className="tab-pane fade" id="tienda-tab-pane" role="tabpanel" aria-labelledby="tienda-tab" tabIndex="4">
               <Tienda/>
+            </div>
+            <div className="tab-pane fade" id="tienda2-tab-pane" role="tabpanel" aria-labelledby="tienda2-tab" tabIndex="4">
+              <Tienda2/>
             </div>
           </div>
         </div>

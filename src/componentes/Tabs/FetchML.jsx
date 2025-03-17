@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Vistas/Tienda.css';
-import listado from './productosTienda.json';
+import listado from './jsons/productosTienda.json';
 
 const FetchML = () => {
     const [productos, setProductos] = useState([]);//sera un estado que tendra una lista o coleccion o arreglo, con esto determino que productos sera algo de eso
