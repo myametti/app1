@@ -1,14 +1,8 @@
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color:rgb(126, 126, 110);
+/* Navigation.css - Based on Barra.css */
+#navbar.container-fluid {
+ background-color: rgb(126, 126, 110) !important;
 }
-
-/* Responsive navigation */
-.nav-tabs {
+.nav-wrapper {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(126, 126, 110);
@@ -17,10 +11,18 @@
   justify-content: center;
   position: relative;
   z-index: 1;
- 
 }
 
-.nav-tabs .nav-link {
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav-link {
   border: 2px solid transparent;
   color: rgb(75, 75, 61) !important;
   font-size: clamp(14px, 2vw, 18px);
@@ -29,17 +31,21 @@
   transition: all 0.3s ease;
   white-space: nowrap;
   border-color: rgb(93, 95, 82);
+  text-decoration: none;
+  display: block;
 }
-.nav-tabs .nav-link.active {
+
+.nav-link.active {
   background-color: rgb(197, 197, 179) !important;
 }
 
-.nav-tabs .official-site-nav-item {
+.official-site-nav-item {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
-.nav-tabs .official-site-nav-item .btn-official-site {
+.btn-official-site {
   color: rgb(75, 75, 61);
   padding: 8px 15px;
   margin: 5px;
@@ -51,18 +57,19 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 10px;
-  
+}
+.nav-item:hover {
+  background-color: rgb(160, 160, 142);;
+  transform: translateY(-5px);
 }
 
 @media (max-width: 992px) {
-  .nav{
+  .nav-links {
+    justify-content: center;
     border-color: rgb(93, 95, 82);
   }
-  .nav-tabs {
-    justify-content: center;
-  }
   
-  .nav-tabs .nav-link {
+  .nav-link {
     padding: 8px 15px;
   }
   
@@ -72,17 +79,22 @@
 }
 
 @media (max-width: 768px) {
-  .nav-tabs {
+  .nav-wrapper {
     flex-direction: column;
     align-items: center;
   }
   
-  .nav-tabs .nav-item {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-links li {
     width: 100%;
     text-align: center;
   }
   
-  .nav-tabs .nav-link {
+  .nav-link {
     width: 100%;
     margin: 3px 0;
   }

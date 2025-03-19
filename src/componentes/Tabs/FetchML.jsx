@@ -73,7 +73,7 @@ const FetchML = () => {
             </div> 
             {/* Categorías */}
             <div className="row mb-4">
-                <div className="col-12 d-flex justify-content-center">
+                <div className="col-md-6 mx-auto">
                     <div className="btn-group" role="group" aria-label="Categorías">
                         {categorias.map(categoria => (
                             <button key={categoria}type="button"className={`btn ${categoriaSeleccionada === categoria ? 'btn' : 'btn-outline'}`}onClick={() => setCategoriaSeleccionada(categoria)}>{categoria}</button>

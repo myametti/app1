@@ -4,10 +4,10 @@ import './Tienda2.css';
 import listado from '../jsons/productosTienda.json';
 
 const ItemListContainer = () => {
-    const [productos, setProductos] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [filtro, setFiltro] = useState('');
-    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todo');
+    const [productos, setProductos] = useState([]);//sera mi lista de productos
+    const [loading, setLoading] = useState(true);//es para la simulacion de carga
+    const [filtro, setFiltro] = useState('');//filtrado segun palabra escrita en la barra
+    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todo');//sera mi categoria segun el boton que se aprete, inicialmente esta en todo
     
     // Extraer categorías únicas del listado
     const categorias = [
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
     ];
 
     useEffect(() => {
-        // Simulamos un tiempo de carga para que se vea más realista
+        //simulamos tiempo de carga de la pagina
         console.log("Cargando tienda...");
         setCategoriaSeleccionada('Todo');
         setTimeout(() => {
@@ -36,7 +36,7 @@ const ItemListContainer = () => {
         }, 3000);
     }, []);
     
-    // Filtrar productos basados en la búsqueda y categoría
+    //filtro con mi listado de productos segun la palabra que se ingreso y la categoria en la que estoy, me retorna un arreglo de estos productos
     const productosFiltrados = productos && productos.length 
         ? productos.filter(producto => {
             const coincideBusqueda = producto.title.toLowerCase().includes(filtro.toLowerCase());
@@ -55,7 +55,7 @@ const ItemListContainer = () => {
         })
         : [];
     
-    // Manejador para el campo de búsqueda
+    //se va a mostar segun el filtro que se aplique
     const manejadorDeFiltro = (e) => {
         setFiltro(e.target.value);
     };

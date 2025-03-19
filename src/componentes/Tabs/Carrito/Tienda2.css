@@ -1,7 +1,7 @@
 /* Tienda2.css - Based on Tienda.css styling */
 .tienda-container {
   background-color: rgb(212, 205, 212);
-  background-size: cover;
+  background-size: cover !important;
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
@@ -12,7 +12,7 @@
 /* Overlay para mejorar legibilidad */
 .tienda-container::before {
   content: "";
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
   right: 0;
@@ -21,8 +21,8 @@
   z-index: 0;
 }
 
-/* Asegurarnos que todo el contenido esté por encima del overlay */
-.tienda-container > * {
+ /* Asegurarnos que todo el contenido esté por encima del overlay */
+ .tienda-container > * {
   position: relative;
   z-index: 1;
 }
@@ -39,6 +39,15 @@
   padding: 1.5rem 0;
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tienda-container .btn-group{
+  border-color: #272722;
+  background-color: #5e5f58;
+}
+
+.tienda-container .btn-outline{
+  background-color: #b6b6b0;
 }
 
 .item-card {

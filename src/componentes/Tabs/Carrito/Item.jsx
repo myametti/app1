@@ -1,7 +1,9 @@
 import './Tienda2.css';
 import ItemCount from './ItemCount';
+import { useEffect } from 'react';
 
 const Item =({item}) =>{
+   
    return(
     <div className="card h-100 item-card">
       <div className="img-container">

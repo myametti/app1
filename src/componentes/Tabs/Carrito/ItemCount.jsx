@@ -26,8 +26,12 @@ const ItemCount = ({ stock }) => {
     };
 
     useEffect(() => {
-        setItemStock(stock);
-    }, [stock]);
+        setItemStock(itemStock);
+        if(itemStock===0){
+            setItems(0);
+
+        }
+    }, [itemStock,items]);
 
     return (
         <div className="item-count-container">
@@ -38,14 +42,19 @@ const ItemCount = ({ stock }) => {
                         <span>{items}</span>
                         <button type="button" onClick={incrementarStock}>+</button>
                     </div>
-                    {stock==1 ?(
-                    <h6 style={{color:"lightgrey", textAlign:"center"}}>¡Aprovecha es el último!</h6>
-                    ): (
-                    <h6 style={{color:"lightgrey", textAlign:"center"}}>Aun quedan {stock} en stock</h6>
+                    {itemStock===1 ?(
+                                    <div>
+                                        <h6 style={{color:"lightgrey", textAlign:"center"}}>¡Aprovecha es el último!</h6>
+                                        <button className="btn btn-primary add-to-cart-btn" onClick={onAdd}>Agregar al carrito</button>
+                                    </div>
+                                ): items===0? (
+                                            <h6 style={{color:"lightgrey", textAlign:"center"}}>¡No hay stock!</h6> 
+                                                ):  (
+                                                    <div>
+                                                        <h6 style={{color:"lightgrey", textAlign:"center"}}>Aun quedan {itemStock} en stock</h6>
+                                                        <button className="btn btn-primary add-to-cart-btn" onClick={onAdd}>Agregar al carrito</button>
+                                                    </div>
                     )}
-                    <button className="btn btn-primary add-to-cart-btn" onClick={onAdd}>
-                        Agregar al carrito
-                    </button>
                 </div>
             </div>
         </div>

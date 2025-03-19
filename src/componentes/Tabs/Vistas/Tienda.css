@@ -1,25 +1,25 @@
 /* Tienda.css - Estilo The Tortured Poets Department */
-.tienda-container {
-    background-color: rgb(212, 205, 212);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed ;
-    min-height: 100vh;
-    padding-bottom: 50px;
-    position: relative;
-  }
-  
-  /* Overlay para mejorar legibilidad */
-  .tienda-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-  }
+.tienda-container-fluid {
+  background-color: rgb(212, 205, 212);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+/* Overlay para mejorar legibilidad */
+.tienda-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
   
   /* Asegurarnos que todo el contenido esté por encima del overlay */
   .tienda-container > * {

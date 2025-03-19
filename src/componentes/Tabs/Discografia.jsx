@@ -1,5 +1,5 @@
 import './Vistas/Discografia.css';
-import albums from './discos.json'
+import albums from './jsons/discos.json'
 const Discografia=()=>{
     return(
         <div className="discografia container-fluid py-4">
