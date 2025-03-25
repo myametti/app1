@@ -33,40 +33,24 @@ const Navegacion = () => {
             
             <ul className="nav-links">
               <li className="nav-item">
-                <NavLink to="/inicio" className={({ isActive }) => 
-                  isActive ? "nav-link active" : "nav-link"}>
-                  Inicio
-                </NavLink>
+                <NavLink to="/inicio" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Inicio</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/discografia" className={({ isActive }) => 
-                  isActive ? "nav-link active" : "nav-link"}>
-                  Discografía
-                </NavLink>
+                <NavLink to="/discografia" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Discografía</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/tours" className={({ isActive }) => 
-                  isActive ? "nav-link active" : "nav-link"}>
-                  Tours
-                </NavLink>
+                <NavLink to="/tours" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Tours</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/fotos" className={({ isActive }) => 
-                  isActive ? "nav-link active" : "nav-link"}>
-                  Fotos
-                </NavLink>
+                <NavLink to="/fotos" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Galería</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/tienda" className={({ isActive }) => 
-                  isActive ? "nav-link active" : "nav-link"}>
-                  Tienda
-                </NavLink>
+             {/* <li className="nav-item">
+                <NavLink to="/tienda" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
+                  Tienda</NavLink>
               </li>
+              */}
               <li className="nav-item">
-                <NavLink to="/tienda2" className={({ isActive }) => 
-                  isActive ? "nav-link active" : "nav-link"}>
-                  Tienda 2
-                </NavLink>
+                <NavLink to="/tienda2" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Tienda</NavLink>
               </li>
             </ul>
           </nav>

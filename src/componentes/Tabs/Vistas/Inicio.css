@@ -1,77 +1,39 @@
 .inicio {
-  background-size: cover !important;
-  background-position: center !important;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
+  position: relative;
+  padding: 20px;
+  transition: background-image 1s ease-in-out;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align content to the top */
-  align-items: flex-start; /* Align items to the left */
-  padding: 20px; /* Add some padding */
+  justify-content: flex-start; /* Align to the left */
+  align-items: flex-start;
 }
 
-/* Usar ID para aumentar especificidad y evitar conflictos */
-#cardNoticias {
-  max-width: 350px;
-  width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  position: relative; /* Important for absolute positioning of buttons */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.noticias-overlay {
+  background-color: rgba(78, 77, 70, 0.7);
+  border-radius: 2px;
+  padding: 15px;
+  width: 80%; /* Make it smaller than full width */
+  max-width: 800px;
+  margin: 20px 0 20px 20px; /* More to the left with left margin of 20px */
 }
 
-#cardNoticias .card-img-top {
-  width: 100%;
-  height: 300px; /* Fixed height */
-  object-fit: cover; /* Ensures image covers the area without distortion */
-}
-
-#cardNoticias .card-body {
-  padding-bottom: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: white !important;
-}
-
-#cardNoticias .card-title{
-  color: black !important;
-  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
-  font-size: 1.25rem !important;
-  height: auto !important;
-  max-height: none !important;
-  white-space: normal !important;
-  overflow: visible !important;
-  display: block !important;
-}
-
-#cardNoticias .card-text{
-  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
-}
-
-#cardNoticias .card-navigation-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  padding: 0 10px;
-}
-
-#cardNoticias .btn-navigation {
-  background-color: #6c757d; /* Bootstrap's secondary color */
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
-}
-
-#cardNoticias .btn-navigation:hover {
-  background-color: #545b62; /* Slightly darker on hover */
+@media (max-width: 992px) {
+  .noticias-overlay {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto; /* Center on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
-  #cardNoticias .btn-navigation {
-    padding: 6px 12px;
-    font-size: 0.9rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+  .inicio {
+    padding: 10px;
+    justify-content: center; /* Center on mobile */
+  }
+  
+  .noticias-overlay {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto; /* Center on small screens */
   }
 }

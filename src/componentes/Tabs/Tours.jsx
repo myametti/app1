@@ -71,7 +71,7 @@ const Tours = () => {
                   <img className="tour-image img-fluid" src={tour.imagen} alt={tour.titulo} />
                 </div>
                 <div className="tour-card card text-center p-3" id={`a${tour.id}`}>
-                  <h5 className="card-title">{tour.titulo}</h5>
+                  <h5 id="tituloTour"className="card-title">{tour.titulo}</h5>
                   <div className="card-text" >
                     <p>{tour.album}</p>
                     <p>{tour.paises}</p>

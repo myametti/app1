@@ -1,0 +1,45 @@
+[
+    {
+        "id": "grammys",
+        "fecha": "3 de febrero de 2025",
+        "titulo": "Taylor en los Grammys!",
+        "texto": "Se veia hermosa con ese vestido rojo bejeweled, la T de Taylor (o Travis) en su upper thigh fue espectacular",
+        "imagenes":["/imagenes/grammy1.png", "/imagenes/grammy2.jpg","/imagenes/grammy3.webp"]
+    },
+    {
+        "id": "1989tv",
+        "fecha": "27 de octubre de 2023",
+        "titulo": "Nuevo Album!",
+        "texto": "Se anuncio la regrabacion de 1989",
+        "imagenes":["/imagenes/1989.webp","/imagenes/19892.jpg","/imagenes/19893.webp","/imagenes/19894.jpg"]
+    },
+    {
+        "id": "records",
+        "fecha": "15 de marzo de 2025",
+        "titulo": "Taylor Swift sigue rompiendo récords",
+        "texto": "La artista estadounidense no solo lidera la industria musical: también se encuentra entre los multimillonarios más importantes del planeta.",
+        "imagenes":[]
+    },
+    {
+        "id": "",
+        "fecha": "",
+        "titulo": "",
+        "texto": "",
+        "imagenes":[]
+    },
+    {
+        "id": "",
+        "fecha": "",
+        "titulo": "",
+        "texto": "",
+        "imagenes":[]
+    },
+    {
+        "id": "",
+        "fecha": "",
+        "titulo": "",
+        "texto": "",
+        "imagenes":[]
+    }
+
+]

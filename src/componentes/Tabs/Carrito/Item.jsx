@@ -10,7 +10,7 @@ const Item =({item}) =>{
          <img src={item.thumbnail} className="card-img-top" alt={item.title} onError={(e) => {e.target.src = "https://via.placeholder.com/150?text=Imagen+no+disponible";}}/>
       </div>
       <div className="card-body d-flex flex-column">
-         <h5 className="card-title">{item.title}</h5>
+         <h5 id="tituloProducto"className="card-title">{item.title}</h5>
          <div className="mt-auto">
             <p className="card-text precio">${item.price.toLocaleString('es-AR')}</p> {/*pone el precio como es en argentina*/}                     
             {item.shipping.free_shipping && (<span className="badge bg-success mb-2">Envío gratis</span>)}

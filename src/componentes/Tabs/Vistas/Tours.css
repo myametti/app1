@@ -9,17 +9,16 @@
 }
 
 .carousel-item img{
-    height: 900px; /* Define la altura máxima para las imágenes */
+    height: 500px; /* Define la altura máxima para las imágenes */
     max-width: 100%; /* Asegura que el ancho se ajuste automáticamente */
     object-fit: contain; /* No recorta la imagen, la ajusta dentro del contenedor */
     margin: 0 auto; /* Centra la imagen horizontalmente */
     display: block; /* Permite el centrado correcto */
-
 }
 
-.card-title {
+#tituloTour.card-title {
   font-size: 2rem !important; /* Aumenta el tamaño del título */
-  font-weight: bold;
+  font-weight: bold!important;
 
 }
 
@@ -29,17 +28,18 @@
 
 #aFearless{
   background-color: rgb(29, 28, 26);
-  color:white!important;
-  text-align: center;
-  font-family: "Play", serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;;
 }
+#aFearless .card-text{
+  color:white!important;
+  text-align: center;
+  font-family: "Play", serif !important;
+}
 
 #SpeakNow{
   background-color: rgb(187, 113, 187);
-  
 }
 #aSpeakNow{
   background-color: rgb(229, 215, 233);
@@ -53,6 +53,7 @@
 
 #aSpeakNow .card-title{
   color: rgb(77, 71, 71) !important;
+  font-family: "Parisienne" , serif!important;
 }
 #aSpeakNow .card-text{
   color: rgb(77, 71, 71)!important;
@@ -68,12 +69,21 @@
   font-style: normal;
   font-size: 22px;
 }
+#aRed .card-title{
+  font-family: "Play", serif!important;
+}
 #Nineteen{
   background-color: rgb(113, 154, 187);
 }
 #aNineteen{
   background-color: rgb(189, 144, 186);
   color:white!important;
+
+}
+#aNineteen .card-title{
+  font-family: "Montserrat", serif!important;
+}
+#aNineteen .card-text{
   font-family: "Montserrat", serif!important;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -85,30 +95,38 @@
 }
 #aRep{
   background-color: rgb(49, 47, 49);
-  text-align: center;
-  color:white!important;
-  font-family: "Cinzel", serif!important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 23px;
+}
+#aRep .card-title{
+  font-family: "Cinzel", serif!important;
+}
+#aRep .card-text{
+  text-align: center;
+  color:rgb(212, 203, 203)!important;
+  font-family: "Cinzel", serif!important;
 }
 #Eras{
   background-color: rgb(212, 205, 212);
 }
 #aEras{
   background-color: rgb(50, 61, 92);
+  font-optical-sizing: auto;
+}
+#aEras .card-title{
+  font-family: "Playfair", serif!important;
+}
+#aEras .card-text{
   text-align: center;
   color:white !important;
   font-family: "Playfair", serif!important;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: 20px;
+  font-variation-settings:"wdth" 100;
+  font-size: 20px;
 }
-
 .pCentrados{
   text-align: center;
   display: block;

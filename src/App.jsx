@@ -6,9 +6,10 @@ import Inicio from './componentes/Tabs/Inicio.jsx';
 import Tours from './componentes/Tabs/Tours.jsx';
 import Discografia from './componentes/Tabs/Discografia.jsx';
 import Fotos from './componentes/Tabs/Fotos.jsx';
-import Tienda from './componentes/Tabs/Tienda.jsx';
+//import Tienda from './componentes/Tabs/Tienda.jsx';
 import Tienda2 from './componentes/Tabs/Tienda2.jsx';
 import Navegacion from './componentes/Navegacion.jsx';
+import Error from './componentes/Error.jsx';
 
 //como buena practica, el nombre de la componente deberia coincidir con el del archivo, en este caso App
 function App() {  
@@ -22,9 +23,9 @@ function App() {
           <Route path="/discografia" element={<Discografia/>} />
           <Route path="/tours" element={<Tours/>} />
           <Route path="/fotos" element={<Fotos/>} />
-          <Route path="/tienda" element={<Tienda/>} />
+         {/*<Route path="/tienda" element={<Tienda/>} /> */} 
           <Route path="/tienda2" element={<Tienda2 />} />
-          <Route path="*" element={<Navigate to="/inicio" />} />
+          <Route path="/*" element={<Error/>} />
         </Routes>
       </div>
     </BrowserRouter>
