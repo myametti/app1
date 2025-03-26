@@ -13,11 +13,15 @@ const Item =({item}) =>{
          <h5 id="tituloProducto"className="card-title">{item.title}</h5>
          <div className="mt-auto">
             <p className="card-text precio">${item.price.toLocaleString('es-AR')}</p> {/*pone el precio como es en argentina*/}                     
-            {item.shipping.free_shipping && (<span className="badge bg-success mb-2">Envío gratis</span>)}
-            <ItemCount stock={item.stock} />  
-            <a href={item.permalink} className="btn btn-primary w-100 mt-2"target="_blank" rel="noopener noreferrer"> Ver detalles </a>
          </div>
       </div>
+      <div className="precio-container">
+      {item.shipping.free_shipping && (<span className="badge bg-success mb-2">Envío gratis</span>)}  
+      </div>
+      <div className="btn-container">
+      <ItemCount stock={item.stock} />  
+      <a href={item.permalink} className="btn btn-primary w-100 mt-2"target="_blank" rel="noopener noreferrer"> Ver detalles </a>
+         </div>
     </div>
    ); 
 }

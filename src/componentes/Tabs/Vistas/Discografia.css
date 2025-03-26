@@ -34,10 +34,11 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
+  background-color: rgb(235, 234, 198);
 }
 
 .album-card .card-body {
-  background-color: white !important;
+  background-color: rgb(235, 234, 198);
   color: rgb(63, 61, 61) !important;
   display: flex;
   flex-direction: column;
@@ -49,8 +50,10 @@
   color: rgb(63, 61, 61) !important;
   font-size: 0.9rem !important;
 }
-.album-card .btn {
-  margin-top: auto;
+.album-card .btn-container {
+  background-color: rgb(235, 234, 198);
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 /* For extra long titles like "The Tortured Poets Department: The Anthology" */

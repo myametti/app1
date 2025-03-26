@@ -208,7 +208,11 @@
 .add-to-cart-btn {
   width: 100%;
   margin-top: 10px;
-  
+
+}
+
+.precio-container{
+  margin-left:10px;
 }
 
 /* Estilos para los botones de categoría */
@@ -222,7 +226,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.85rem;
-  
+}
+
+.btn-container{
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .btn-group .btn:hover {

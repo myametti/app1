@@ -2,6 +2,7 @@ import ItemList from './ItemList';
 import { useState, useEffect } from 'react';
 import './Tienda2.css';
 import listado from '../jsons/productosTienda.json';
+import { NavLink } from 'react-router-dom';
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);//sera mi lista de productos

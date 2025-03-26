@@ -27,7 +27,9 @@ const AlbumCard = ({ image, title, description, spotifyLink }) => {
           <div className="card-body d-flex flex-column">
             <h5 className="card-title">{title}</h5>
             <p className="card-text flex-grow-1">{description}</p>
-            <a href={spotifyLink} className="btn btn-success mt-auto" target="_blank" rel="noopener noreferrer">
+          </div>
+          <div className="btn-container">
+          <a href={spotifyLink} className="btn btn-success mt-auto" target="_blank" rel="noopener noreferrer">
               Abrir en Spotify
             </a>
           </div>

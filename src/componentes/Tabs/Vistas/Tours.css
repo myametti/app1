@@ -37,6 +37,9 @@
   text-align: center;
   font-family: "Play", serif !important;
 }
+#aFearless .card-title{
+  color:white!important;
+}
 
 #SpeakNow{
   background-color: rgb(187, 113, 187);
@@ -78,7 +81,7 @@
 #aNineteen{
   background-color: rgb(189, 144, 186);
   color:white!important;
-
+  font-family: "Montserrat", serif!important;
 }
 #aNineteen .card-title{
   font-family: "Montserrat", serif!important;
@@ -113,7 +116,7 @@
 }
 #aEras{
   background-color: rgb(50, 61, 92);
-  font-optical-sizing: auto;
+  font-optical-sizing: auto; font-family: "Playfair", serif!important;
 }
 #aEras .card-title{
   font-family: "Playfair", serif!important;
